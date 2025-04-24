@@ -49,6 +49,6 @@ if not data_filtered.empty:
 
         # Predict fare
         prediction = model.predict([model_input])[0]
-        st.success(f"Predicted Fare: ₹{prediction:.2f}")
+        st.success(f"Predicted Fare: NTD{prediction:.2f}")
 else:
     st.warning("No flights found matching the selected criteria.")
